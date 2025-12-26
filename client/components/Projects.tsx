@@ -26,16 +26,6 @@ const projects = [
         status: "Completed",
     },
     {
-        title: "CodeForge",
-        category: "Coding Platform",
-        description: "An online coding practice platform for developers to sharpen their programming skills with interactive challenges.",
-        technologies: ["TypeScript", "React", "Node.js"],
-        link: null,
-        github: "https://github.com/Sathiskumar-S/codeforge",
-        gradient: "from-orange-500 to-red-500",
-        status: "In Development",
-    },
-    {
         title: "College Webpage",
         category: "Full Stack Web",
         description: "A comprehensive college webpage developed for educational institution with modern design and functionality.",
@@ -43,7 +33,7 @@ const projects = [
         link: "https://ucer.selfmade.one/",
         github: null,
         gradient: "from-green-500 to-emerald-500",
-        status: "Under Development",
+        status: "Completed",
     },
     {
         title: "Face Mask Detection",
@@ -58,7 +48,7 @@ const projects = [
     {
         title: "QR Code Generator",
         category: "Web Utility",
-        description: "A simple and efficient QR code generation tool for creating custom QR codes for various purposes.",
+        description: "A lightweight and efficient web utility that enables users to instantly generate high-quality custom QR codes for URLs, text, and other digital assets, tailored for both personal and professional use.",
         technologies: ["JavaScript", "HTML", "CSS"],
         link: null,
         github: "https://github.com/Sathiskumar-S/qr-code-generator",
@@ -120,10 +110,10 @@ export default function Projects() {
                                     </span>
                                     <span
                                         className={`text-xs px-3 py-1 rounded-full ${project.status === "Live"
-                                                ? "bg-green-500/20 text-green-400 border border-green-500/50"
-                                                : project.status === "Completed"
-                                                    ? "bg-blue-500/20 text-blue-400 border border-blue-500/50"
-                                                    : "bg-yellow-500/20 text-yellow-400 border border-yellow-500/50"
+                                            ? "bg-green-500/20 text-green-400 border border-green-500/50"
+                                            : project.status === "Completed"
+                                                ? "bg-blue-500/20 text-blue-400 border border-blue-500/50"
+                                                : "bg-yellow-500/20 text-yellow-400 border border-yellow-500/50"
                                             }`}
                                     >
                                         {project.status}

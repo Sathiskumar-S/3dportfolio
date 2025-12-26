@@ -23,7 +23,7 @@ export default function Blog() {
 
     const fetchPosts = async () => {
         try {
-            const response = await fetch("http://localhost:8000/posts");
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts`);
             const data = await response.json();
             setPosts(data);
         } catch (error) {

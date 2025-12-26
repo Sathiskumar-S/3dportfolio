@@ -21,7 +21,7 @@ export default function AdminLogin() {
         setLoading(true);
 
         try {
-            const response = await fetch("http://localhost:8000/token", {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/token`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded",
@@ -156,12 +156,6 @@ export default function AdminLogin() {
                         </motion.button>
                     </form>
 
-                    {/* Info */}
-                    <div className="mt-6 p-4 bg-cyan-500/10 border border-cyan-500/30 rounded-lg">
-                        <p className="text-cyan-400 text-sm text-center">
-                            Default credentials: <strong>admin</strong> / <strong>secret</strong>
-                        </p>
-                    </div>
                 </motion.div>
 
                 {/* Back to Home */}

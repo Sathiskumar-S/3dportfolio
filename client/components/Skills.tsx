@@ -7,12 +7,12 @@ const skillCategories = [
         title: "Frontend Development",
         gradient: "from-cyan-500 to-blue-500",
         skills: [
-            { name: "React", level: 90 },
-            { name: "Next.js", level: 85 },
             { name: "Angular", level: 80 },
             { name: "TypeScript", level: 85 },
             { name: "Tailwind CSS", level: 90 },
             { name: "Three.js", level: 75 },
+            { name: "React", level: 30 },
+            { name: "Next.js", level: 25 },
         ],
     },
     {
@@ -36,7 +36,6 @@ const skillCategories = [
             { name: "ARCore", level: 75 },
             { name: "ARKit", level: 70 },
             { name: "Marker-based AR", level: 85 },
-            { name: "3D Modeling", level: 70 },
         ],
     },
     {

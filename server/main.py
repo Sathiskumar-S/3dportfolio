@@ -8,14 +8,16 @@ import crud, models, schemas
 from database import SessionLocal, engine, get_db
 from auth import Token, create_access_token, get_current_user, verify_password
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Portfolio API")
 
-origins = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000").split(",")
 
 app.add_middleware(
     CORSMiddleware,

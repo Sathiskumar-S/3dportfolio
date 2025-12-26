@@ -71,8 +71,7 @@ export default function About() {
                                 <p className="text-lg">
                                     Hi! I'm <span className="text-cyan-400 font-semibold">Sathiskumar Saravanan</span>,
                                     a passionate full-stack developer with a strong foundation in both front-end and
-                                    back-end technologies. I graduated with a{" "}
-                                    <span className="text-purple-400 font-semibold">CGPA of 8.46/10.0</span> in Computer Science
+                                    back-end technologies. I graduated in Computer Science
                                     from University College of Engineering, Ramanathapuram.
                                 </p>
 
@@ -84,8 +83,7 @@ export default function About() {
 
                                 <p>
                                     My expertise spans the <span className="text-cyan-400 font-semibold">MEAN/MERN stack</span>,
-                                    with hands-on experience in building scalable OTT platforms at Shortfundly and e-commerce solutions
-                                    at Selfmade Ninja Academy. I specialize in creating{" "}
+                                    with hands-on experience in building scalable OTT platforms at Shortfundly. I specialize in creating{" "}
                                     <span className="text-cyan-400 font-semibold">immersive AR/VR applications</span> using Unity,
                                     WebAR, and ARCore.
                                 </p>

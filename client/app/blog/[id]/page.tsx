@@ -28,7 +28,7 @@ export default function BlogPost() {
 
     const fetchPost = async (id: string) => {
         try {
-            const response = await fetch(`http://localhost:8000/posts/${id}`);
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/posts/${id}`);
             if (!response.ok) {
                 throw new Error("Post not found");
             }
