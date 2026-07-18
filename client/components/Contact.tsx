@@ -83,10 +83,10 @@ export default function Contact() {
                                 </div>
                             </div>
                             <a
-                                href="mailto:sathiskumarsaravanan243214@gmail.com"
+                                href="mailto:sathiskumar243214@gmail.com"
                                 className="text-cyan-400 hover:text-cyan-300 transition-colors duration-300 break-all"
                             >
-                                sathiskumarsaravanan243214@gmail.com
+                                sathiskumar243214@gmail.com
                             </a>
                         </div>
 
@@ -181,7 +181,7 @@ export default function Contact() {
                     className="text-center mt-16 pt-8 border-t border-white/10"
                 >
                     {/* Blog Link */}
-                    <div className="mb-6">
+                    {/* <div className="mb-6">
                         <a
                             href="/blog"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/50 rounded-lg text-cyan-400 font-semibold hover:bg-gradient-to-r hover:from-cyan-500/30 hover:to-purple-500/30 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
@@ -191,7 +191,7 @@ export default function Contact() {
                             </svg>
                             Read My Blog
                         </a>
-                    </div>
+                    </div> */}
 
                     <p className="text-gray-400 italic text-lg mb-2">
                         "Commitment Level: Over 9000"

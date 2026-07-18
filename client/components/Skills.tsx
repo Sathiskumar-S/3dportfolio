@@ -7,67 +7,145 @@ const skillCategories = [
         title: "Frontend Development",
         gradient: "from-cyan-500 to-blue-500",
         skills: [
-            { name: "Angular", level: 80 },
-            { name: "TypeScript", level: 85 },
-            { name: "Tailwind CSS", level: 90 },
-            { name: "Three.js", level: 75 },
-            { name: "React", level: 30 },
-            { name: "Next.js", level: 25 },
+            { name: "Angular", level: 90 },
+            { name: "TypeScript", level: 90 },
+            { name: "Tailwind CSS", level: 95 },
+            { name: "Three.js", level: 80 },
+            { name: "A-Frame", level: 70 },
+            { name: "WebXR", level: 75 },
+            { name: "MindAR", level: 85 },
+            { name: "React", level: 75 },
+            { name: "React Native", level: 65 },
         ],
     },
     {
         title: "Backend Development",
         gradient: "from-purple-500 to-pink-500",
         skills: [
-            { name: "Node.js", level: 85 },
-            { name: "Express.js", level: 85 },
-            { name: "Java Spring Boot", level: 80 },
-            { name: "PHP", level: 75 },
-            { name: "Python", level: 80 },
-            { name: "FastAPI", level: 75 },
+            { name: "Node.js", level: 90 },
+            { name: "Express.js", level: 88 },
+            { name: "FastAPI", level: 80 },
+            { name: "REST APIs", level: 92 },
+            { name: "JWT", level: 80 },
+            { name: "Python", level: 85 },
         ],
     },
     {
         title: "XR/AR Technologies",
         gradient: "from-orange-500 to-red-500",
         skills: [
-            { name: "Unity", level: 85 },
-            { name: "WebAR", level: 80 },
-            { name: "ARCore", level: 75 },
-            { name: "ARKit", level: 70 },
-            { name: "Marker-based AR", level: 85 },
+            { name: "Unity", level: 90 },
+            { name: "Vuforia", level: 75 },
+            { name: "AR Foundation", level: 80 },
+            { name: "XR Interaction Toolkit", level: 78 },
+            { name: "Three.js", level: 80 },
+            { name: "WebXR", level: 75 },
+            { name: "MindAR", level: 85 },
+            { name: "OpenXR", level: 70 },
         ],
     },
     {
         title: "Databases",
         gradient: "from-green-500 to-emerald-500",
         skills: [
-            { name: "MongoDB", level: 85 },
+            { name: "MongoDB", level: 88 },
             { name: "MySQL", level: 85 },
-            { name: "SQLite", level: 80 },
-            { name: "PostgreSQL", level: 75 },
+            { name: "Firebase", level: 80 },
         ],
     },
     {
-        title: "Tools & Others",
+        title: "DevOps & Infrastructure",
+        gradient: "from-green-500 to-emerald-500",
+        skills: [
+            { name: "Docker", level: 88 },
+            { name: "Docker Compose", level: 82 },
+            { name: "GitHub Actions", level: 80 },
+            { name: "GitLab CI/CD", level: 76 },
+            { name: "Nginx", level: 78 },
+            { name: "PM2", level: 75 },
+            { name: "Certbot", level: 72 },
+            { name: "AWS EC2", level: 72 },
+            { name: "Azure VM", level: 72 },
+            { name: "Linux", level: 80 },
+        ],
+    },
+    {
+        title: "Tools & Productivity",
         gradient: "from-indigo-500 to-purple-500",
         skills: [
-            { name: "Git & GitHub", level: 90 },
+            { name: "Git & GitHub", level: 95 },
+            { name: "GitLab", level: 88 },
+            { name: "Postman", level: 80 },
             { name: "OpenCV", level: 75 },
-            { name: "Docker", level: 70 },
-            { name: "REST APIs", level: 90 },
-            { name: "WebSockets", level: 75 },
+            { name: "WebSockets", level: 78 },
             { name: "Responsive Design", level: 95 },
+            { name: "VS Code", level: 95 },
+            { name: "Android Studio", level: 70 },
+            { name: "Blender", level: 65 },
         ],
     },
 ];
 
-const techStack = [
-    "HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Next.js", "Angular",
-    "Node.js", "Express", "MongoDB", "MySQL", "Unity", "WebAR", "Three.js",
-    "Tailwind CSS", "Java", "Spring Boot", "PHP", "Python", "OpenCV",
-    "ARCore", "ARKit", "Git", "Docker", "REST API"
+const techStackCategories = [
+    {
+        title: "Frontend",
+        items: ["Angular", "React", "React Native", "Tailwind CSS", "Three.js", "A-Frame", "WebXR", "MindAR"],
+    },
+    {
+        title: "Backend",
+        items: ["Node.js", "Express.js", "FastAPI", "REST APIs", "JWT", "Python"],
+    },
+    {
+        title: "XR Development",
+        items: ["Unity", "Vuforia", "AR Foundation", "XR Interaction Toolkit", "Three.js", "WebXR", "MindAR", "OpenXR"],
+    },
+    {
+        title: "AI",
+        items: ["OpenAI", "AI Agents", "Prompt Engineering", "Azure AI Foundry", "LLM Integration", "AI Automation"],
+    },
+    {
+        title: "Databases",
+        items: ["MongoDB", "MySQL", "Firebase"],
+    },
+    {
+        title: "DevOps",
+        items: [
+            "Docker",
+            "Docker Compose",
+            "GitHub Actions",
+            "GitLab CI/CD",
+            "Linux",
+            "Nginx",
+            "PM2",
+            "Certbot",
+            "AWS EC2",
+            "Azure VM",
+        ],
+    },
+    {
+        title: "Programming Languages",
+        items: ["JavaScript", "TypeScript", "Python", "C#", "C++", "HTML", "CSS"],
+    },
+    {
+        title: "Tools",
+        items: ["Git", "GitHub", "GitLab", "Postman", "Unity", "VS Code", "Android Studio", "Blender"],
+    },
+    {
+        title: "Concepts",
+        items: [
+            "System Design",
+            "Production Deployment",
+            "Scalable Architecture",
+            "Performance Optimization",
+            "Clean Code",
+            "API Design",
+            "Real-time Applications",
+        ],
+    },
 ];
+
+// Flattened unique tech list for old-style cloud display
+const allTech = Array.from(new Set(techStackCategories.flatMap((c) => c.items)));
 
 export default function Skills() {
     return (
@@ -84,7 +162,7 @@ export default function Skills() {
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
                         Skills & <span className="gradient-text">Expertise</span>
                     </h2>
-                    <div className="h-1 w-24 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full mb-6" />
+                    <div className="h-1 w-24 bg-linear-to-r from-cyan-500 to-purple-500 mx-auto rounded-full mb-6" />
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         A comprehensive toolkit spanning full-stack development, immersive technologies, and modern frameworks
                     </p>
@@ -98,11 +176,10 @@ export default function Skills() {
                     viewport={{ once: true }}
                     className="glass rounded-3xl p-8 mb-12"
                 >
-                    <h3 className="text-2xl font-bold text-center mb-8 text-white">
-                        Tech Stack
-                    </h3>
+                    <h3 className="text-2xl font-bold text-center mb-8 text-white">Tech Stack</h3>
+
                     <div className="flex flex-wrap justify-center gap-3">
-                        {techStack.map((tech, index) => (
+                        {allTech.map((tech, index) => (
                             <motion.span
                                 key={tech}
                                 initial={{ opacity: 0, scale: 0.8 }}
@@ -110,7 +187,7 @@ export default function Skills() {
                                 transition={{ duration: 0.3, delay: index * 0.03 }}
                                 viewport={{ once: true }}
                                 whileHover={{ scale: 1.1, y: -5 }}
-                                className="px-4 py-2 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-full text-sm font-medium text-cyan-400 hover:border-cyan-500 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-default"
+                                            className="px-4 py-2 bg-linear-to-r from-cyan-500/10 to-purple-500/10 border border-cyan-500/30 rounded-full text-sm font-medium text-cyan-400 hover:border-cyan-500 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 cursor-default"
                             >
                                 {tech}
                             </motion.span>
@@ -131,7 +208,7 @@ export default function Skills() {
                         >
                             {/* Category Header */}
                             <div className="flex items-center gap-3 mb-6">
-                                <div className={`h-1 w-12 bg-gradient-to-r ${category.gradient} rounded-full`} />
+                                <div className={`h-1 w-12 bg-linear-to-r ${category.gradient} rounded-full`} />
                                 <h3 className="text-xl font-bold text-white">{category.title}</h3>
                             </div>
 
@@ -158,7 +235,7 @@ export default function Skills() {
                                                 whileInView={{ width: `${skill.level}%` }}
                                                 transition={{ duration: 1, delay: categoryIndex * 0.1 + skillIndex * 0.05 + 0.2, ease: "easeOut" }}
                                                 viewport={{ once: true }}
-                                                className={`h-full bg-gradient-to-r ${category.gradient} rounded-full relative`}
+                                                className={`h-full bg-linear-to-r ${category.gradient} rounded-full relative`}
                                             >
                                                 {/* Glow Effect */}
                                                 <div className="absolute inset-0 bg-white/30 blur-sm" />
@@ -183,7 +260,7 @@ export default function Skills() {
                         Continuous Learning
                     </h3>
                     <p className="text-gray-400 mb-6">
-                        Currently focusing on Data Structures & Algorithms and exploring advanced AR/VR technologies
+                        Learning and implementing AI technologies in XR and full‑stack applications.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <motion.a
@@ -192,7 +269,7 @@ export default function Skills() {
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-6 py-3 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/50 rounded-lg text-yellow-400 font-semibold hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300"
+                            className="px-6 py-3 bg-linear-to-r from-yellow-500/20 to-orange-500/20 border border-yellow-500/50 rounded-lg text-yellow-400 font-semibold hover:shadow-lg hover:shadow-yellow-500/30 transition-all duration-300"
                         >
                             LeetCode Profile
                         </motion.a>
@@ -202,7 +279,7 @@ export default function Skills() {
                             rel="noopener noreferrer"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="px-6 py-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/50 rounded-lg text-green-400 font-semibold hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300"
+                            className="px-6 py-3 bg-linear-to-r from-green-500/20 to-emerald-500/20 border border-green-500/50 rounded-lg text-green-400 font-semibold hover:shadow-lg hover:shadow-green-500/30 transition-all duration-300"
                         >
                             GeeksforGeeks Profile
                         </motion.a>

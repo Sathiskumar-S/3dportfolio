@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import ProjectVideos from "./ProjectVideos";
 import { useState } from "react";
 
 const projects = [
@@ -10,7 +11,7 @@ const projects = [
         category: "AR Learning Platform",
         description: "An interactive AR-based learning platform designed to make complex educational concepts simple and engaging for school students through 3D visualization.",
         technologies: ["Unity", "WebAR", "AR", "3D Modeling"],
-        link: "https://eduar.selfmade.solutions/",
+        link: "https://youtu.be/OznLCtB7BoE?si=He3IyFPKqQ3HLf9H",
         github: null,
         gradient: "from-cyan-500 to-blue-500",
         status: "Live",
@@ -20,8 +21,8 @@ const projects = [
         category: "AR Android App",
         description: "An Android application showcasing dynamic and interactive business cards using Marker-based Augmented Reality technology.",
         technologies: ["AR", "Android", "Marker-based AR", "PHP"],
-        link: null,
-        github: "https://github.com/Sathiskumar-S/Virtual-Business-Cards",
+        link: "https://youtu.be/O9zgHftCdK0?si=9gYRJPkoriFLjMpU",
+        github: null,
         gradient: "from-purple-500 to-pink-500",
         status: "Completed",
     },
@@ -100,7 +101,7 @@ export default function Projects() {
                             >
                                 {/* Gradient Background on Hover */}
                                 <div
-                                    className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                                    className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none`}
                                 />
 
                                 {/* Status Badge */}
@@ -151,7 +152,7 @@ export default function Projects() {
                                             rel="noopener noreferrer"
                                             whileHover={{ scale: 1.05 }}
                                             whileTap={{ scale: 0.95 }}
-                                            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+                                            className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-lg text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 cursor-pointer"
                                         >
                                             <ExternalLink className="w-4 h-4" />
                                             View Live
@@ -165,7 +166,7 @@ export default function Projects() {
                                             whileHover={{ scale: 1.05 }}
                                             whileTap={{ scale: 0.95 }}
                                             className={`${project.link ? "px-4" : "flex-1"
-                                                } flex items-center justify-center gap-2 py-2 bg-white/10 rounded-lg text-white text-sm font-semibold hover:bg-white/20 border border-white/20 transition-all duration-300`}
+                                                } flex items-center justify-center gap-2 py-2 bg-white/10 rounded-lg text-white text-sm font-semibold hover:bg-white/20 border border-white/20 transition-all duration-300 cursor-pointer`}
                                         >
                                             <Github className="w-4 h-4" />
                                             {!project.link && "View Code"}
@@ -184,6 +185,9 @@ export default function Projects() {
                         </motion.div>
                     ))}
                 </div>
+
+                {/* Project Demos */}
+                <ProjectVideos />
 
                 {/* View More on GitHub */}
                 <motion.div

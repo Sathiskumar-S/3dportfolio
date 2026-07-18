@@ -7,7 +7,7 @@ const highlights = [
     {
         icon: Code2,
         title: "Full Stack Expertise",
-        description: "MEAN/MERN Stack, Java Spring Boot, PHP, and modern frameworks",
+        description: "MEAN/MERN Stack, Python FastAPI, PHP, and modern frameworks",
     },
     {
         icon: Sparkles,
@@ -16,8 +16,8 @@ const highlights = [
     },
     {
         icon: Rocket,
-        title: "Innovation Driven",
-        description: "Working toward an AR-focused startup in educational technology",
+        title: "DevOps & Production",
+        description: "Docker, CI/CD, Linux, Nginx, SSL and production-ready deployments",
     },
     {
         icon: GraduationCap,
@@ -69,34 +69,23 @@ export default function About() {
                         >
                             <div className="space-y-4 text-gray-300 leading-relaxed">
                                 <p className="text-lg">
-                                    Hi! I'm <span className="text-cyan-400 font-semibold">Sathiskumar Saravanan</span>,
-                                    a passionate full-stack developer with a strong foundation in both front-end and
-                                    back-end technologies. I graduated in Computer Science
-                                    from University College of Engineering, Ramanathapuram.
+                                    Hi! I'm <span className="text-cyan-400 font-semibold">Sathiskumar Saravanan</span>, a Full Stack Software Engineer experienced in
+                                    building scalable web applications, immersive XR solutions, and AI-powered experiences. I hold a <span className="text-cyan-400 font-semibold">Bachelor's degree in Computer Science</span>.
                                 </p>
 
                                 <p>
-                                    I currently work as a <span className="text-purple-400 font-semibold">Full Stack Developer (Immersive Experience) at TCS</span>,
-                                    where I develop cutting-edge WebXR AR experiences using AI agents, MindAR, and A-Frame.
-                                    I've built tools that significantly accelerate Unity procedure setup and automated AR scene generation.
+                                    My work spans modern JavaScript frameworks, Node.js, Python, Unity, cloud infrastructure, and production deployments. I focus on
+                                    designing systems that are scalable, secure, and maintainable while delivering feature-rich user experiences.
                                 </p>
 
                                 <p>
-                                    My expertise spans the <span className="text-cyan-400 font-semibold">MEAN/MERN stack</span>,
-                                    with hands-on experience in building scalable OTT platforms at Shortfundly. I specialize in creating{" "}
-                                    <span className="text-cyan-400 font-semibold">immersive AR/VR applications</span> using Unity,
-                                    WebAR, and ARCore.
-                                </p>
-
-                                <p>
-                                    I'm passionate about bridging education and technology through AR/VR. My flagship project,{" "}
-                                    <span className="text-purple-400 font-semibold">EduAR</span>, showcases the Tamilnadu state board
-                                    syllabus in 3D, making complex concepts easier to understand for students. I've also published
-                                    research on Virtual Business Cards using Augmented Reality.
+                                    I have hands-on experience with Docker, CI/CD pipelines, Linux servers, Nginx, SSL configuration, and production observability.
+                                    On the XR side, I build AR/VR and WebXR applications using Unity, Vuforia, AR Foundation, A-Frame, Three.js, and MindAR. My
+                                    EduAR project converts curriculum content into interactive 3D learning experiences to make education more engaging.
                                 </p>
 
                                 <p className="text-cyan-400 italic font-medium">
-                                    Let's connect and build the future of immersive learning together! 🚀
+                                    I enjoy solving engineering challenges and building production-ready solutions. Let's connect and create impactful software. 🚀
                                 </p>
                             </div>
 

@@ -31,20 +31,6 @@ const experiences = [
         ],
         gradient: "from-purple-500 to-pink-500",
     },
-    {
-        company: "Selfmade Ninja Academy",
-        role: "WordPress Developer Intern",
-        duration: "September 2023 – November 2023",
-        location: "Bengaluru, India",
-        type: "Internship",
-        current: false,
-        achievements: [
-            "Developed a robust e-commerce website for a client in the fashion industry, catering to a diverse range of products",
-            "Leveraged WordPress and WooCommerce to create a dynamic and scalable e-commerce platform",
-            "Implemented payment gateways, integrated third-party APIs for shipping and order tracking, and optimized site performance through efficient use of caching and responsive design",
-        ],
-        gradient: "from-orange-500 to-red-500",
-    },
 ];
 
 export default function Experience() {
