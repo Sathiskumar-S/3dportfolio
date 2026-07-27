@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, Linkedin, Github, Instagram, Code2, BookOpen } from "lucide-react";
+import AvatarCorner from "./AvatarCorner";
 
 const socialLinks = [
     {
@@ -54,9 +55,9 @@ export default function Contact() {
                     className="text-center mb-16"
                 >
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                        Let's <span className="gradient-text">Connect</span>
+                        Let&apos;s <span className="gradient-text">Connect</span>
                     </h2>
-                    <div className="h-1 w-24 bg-gradient-to-r from-cyan-500 to-purple-500 mx-auto rounded-full mb-6" />
+                    <div className="h-1 w-24 bg-linear-to-r from-cyan-500 to-purple-500 mx-auto rounded-full mb-6" />
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Open to collaborations, partnerships, and exciting opportunities in AR/VR and full-stack development
                     </p>
@@ -74,12 +75,12 @@ export default function Contact() {
                         {/* Email Card */}
                         <div className="glass-card rounded-2xl p-8 border border-white/10 hover:border-cyan-500/50 transition-all duration-300">
                             <div className="flex items-center gap-4 mb-4">
-                                <div className="p-4 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-xl">
+                                <div className="p-4 bg-linear-to-br from-cyan-500/20 to-purple-500/20 rounded-xl">
                                     <Mail className="w-8 h-8 text-cyan-400" />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-white">Email Me</h3>
-                                    <p className="text-gray-400 text-sm">Let's discuss your ideas</p>
+                                    <p className="text-gray-400 text-sm">Let&apos;s discuss your ideas</p>
                                 </div>
                             </div>
                             <a
@@ -96,14 +97,14 @@ export default function Contact() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: 0.3 }}
                             viewport={{ once: true }}
-                            className="glass rounded-2xl p-8 bg-gradient-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30"
+                            className="glass rounded-2xl p-8 bg-linear-to-br from-cyan-500/10 to-purple-500/10 border border-cyan-500/30"
                         >
                             <h3 className="text-2xl font-bold text-white mb-4">
                                 Ready to Build Something Amazing?
                             </h3>
                             <p className="text-gray-300 mb-6 leading-relaxed">
-                                I'm always excited to collaborate on innovative projects, especially in AR/VR and educational technology.
-                                Let's connect and create the future of immersive learning together! 🚀
+                                I&apos;m always excited to collaborate on innovative projects, especially in AR/VR and educational technology.
+                                Let&apos;s connect and create the future of immersive learning together! 🚀
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 <span className="px-4 py-2 bg-cyan-500/20 border border-cyan-500/50 rounded-full text-cyan-400 text-sm font-medium">
@@ -144,7 +145,7 @@ export default function Contact() {
                                 whileTap={{ scale: 0.98 }}
                                 className={`flex items-center gap-4 glass-card rounded-xl p-6 border border-white/10 hover:border-white/30 ${social.hoverColor} hover:shadow-lg transition-all duration-300 group`}
                             >
-                                <div className={`p-4 bg-gradient-to-br ${social.color} rounded-lg group-hover:scale-110 transition-transform duration-300`}>
+                                    <div className={`p-4 bg-linear-to-br ${social.color} rounded-lg group-hover:scale-110 transition-transform duration-300`}>
                                     <social.icon className="w-6 h-6 text-white" />
                                 </div>
                                 <div className="flex-1">
@@ -172,6 +173,9 @@ export default function Contact() {
                     </motion.div>
                 </div>
 
+                {/* Avatar corner */}
+                <AvatarCorner />
+
                 {/* Footer Quote */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -194,10 +198,10 @@ export default function Contact() {
                     </div> */}
 
                     <p className="text-gray-400 italic text-lg mb-2">
-                        "Commitment Level: Over 9000"
+                        “Commitment Level: Over 9000”
                     </p>
                     <p className="text-cyan-400 font-semibold">
-                        Let's build the future together! 🚀
+                        Let&apos;s build the future together! 🚀
                     </p>
                 </motion.div>
             </div>
