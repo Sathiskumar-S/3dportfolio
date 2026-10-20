@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Code2, Sparkles, Rocket, GraduationCap } from "lucide-react";
+import { publicAssetPath } from "@/lib/site";
 
 const highlights = [
     {
@@ -91,7 +92,7 @@ export default function About() {
 
                             {/* Download Resume Button */}
                             <motion.a
-                                href="/resume.pdf"
+                                href={publicAssetPath("/resume.pdf")}
                                 download
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}

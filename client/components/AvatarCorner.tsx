@@ -4,9 +4,10 @@ import React, { Suspense, useRef } from "react";
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, Environment, Preload } from "@react-three/drei";
+import { publicAssetPath } from "@/lib/site";
 
 function AvatarModel() {
-    const gltf = useGLTF("/avatar.glb");
+    const gltf = useGLTF(publicAssetPath("/avatar.glb"));
     const ref = useRef<THREE.Object3D | null>(null);
 
     // No idle animation — keep static but rotated slightly to face left
@@ -36,4 +37,4 @@ export default function AvatarCorner() {
     );
 }
 
-useGLTF.preload("/avatar.glb");
+useGLTF.preload(publicAssetPath("/avatar.glb"));

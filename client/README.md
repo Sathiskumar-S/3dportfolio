@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 3D Portfolio
 
-## Getting Started
+This portfolio is exported as a static site and deployed to GitHub Pages from
+the repository's `main` branch by `../.github/workflows/deploy-pages.yml`.
+The server-backed blog and admin features are disabled in this static build.
 
-First, run the development server:
+## Local development
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## GitHub Pages deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Push this repository to GitHub. The workflow builds `client` and publishes
+   its `out` folder whenever changes are pushed to `main`.
+2. In the repository, open **Settings → Pages** and set **Build and deployment
+   → Source** to **GitHub Actions**.
+3. After the workflow succeeds, the site will be available at
+   `https://Sathiskumar-S.github.io/3dportfolio/`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Use a custom domain
 
-## Learn More
+1. Buy or choose a domain and decide whether to use the apex domain
+   (`example.com`) or a subdomain such as `www.example.com`.
+2. In your domain provider's DNS settings, point the domain to GitHub Pages.
+   For an apex domain, add `A` records for `185.199.108.153`,
+   `185.199.109.153`, `185.199.110.153`, and `185.199.111.153`. For a `www`
+   subdomain, add a `CNAME` record pointing to `Sathiskumar-S.github.io`.
+   DNS providers use different screens; do not add both sets unless you intend
+   to use both the apex and subdomain.
+3. In GitHub, open **Settings → Pages → Custom domain**, enter your exact
+   domain, and save it. Wait for DNS verification, then enable **Enforce HTTPS**
+   when GitHub offers it.
+4. Add a file named `CNAME` containing the exact domain (no `https://`) to
+   `client/public/`. It will be included in the deployed site.
+5. Edit `../.github/workflows/deploy-pages.yml` and change
+   `NEXT_PUBLIC_CUSTOM_DOMAIN: "false"` to `NEXT_PUBLIC_CUSTOM_DOMAIN: "true"`.
+   This makes links and public assets load from the root of the custom domain
+   instead of `/3dportfolio`.
+6. Commit and push those changes. The workflow will rebuild the site for the
+   custom domain.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The custom domain itself is not set in this repository because its exact name
+is not known yet. If you share the chosen domain later, the workflow and any
+domain-specific configuration can be updated to match.
