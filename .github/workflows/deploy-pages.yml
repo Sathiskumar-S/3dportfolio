@@ -21,7 +21,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_CUSTOM_DOMAIN: "false"
+      NEXT_PUBLIC_CUSTOM_DOMAIN: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
